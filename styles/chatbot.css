@@ -1,0 +1,35 @@
+#sntch_button
+{   
+    width: 90px !important;
+    height: 90px !important;
+    right: 10px !important;
+    bottom: 10px !important;
+    background-image: url(https://i.postimg.cc/X7H74952/logo1-sin-fondo.png) !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    border-radius: 50% !important;
+}
+#sntch_webchat iframe {
+    width: 600px !important;
+    height: 600px !important;
+}
+
+#sntch_webchat {
+    width: 600px !important;
+    height: 600px !important;
+    bottom: 10px !important;
+    right: 10px !important;
+    border-radius: 20px 20px 0px 0px !important;
+    box-shadow: rgba(241, 9, 230, 0.849) 0px 3px 6px, rgba(209, 1, 209, 0.808) 0px 3px 6px !important;
+}
+#sntch_close {
+    top: 12px !important;
+    right: 8px !important;
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 26px !important;
+    line-height: 40px !important;
+    color: rgb(235, 15, 205) !important;
+    text-align: center !important;
+    cursor: pointer !important;
+}

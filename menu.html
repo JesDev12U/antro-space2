@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú | Space</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/styles-menu.css">
+    <!--Iconos-->
+    <script src="https://kit.fontawesome.com/ecae724dfb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!--Fuente-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+    <!--Estilos del mapa del sitio-->
+    <link rel="stylesheet" href="./styles/mapasitio.css">
+</head>
+
+<body>
+    <span id="inicio"></span>
+    <header>
+        <div class="logo">
+            <a href="#inicio"><img src="img/logos/new/logo1_sin_fondo.png" alt="Logo de la marca" class="logo-marca"></a>
+            <a href="#inicio"><img src="img/logos/new/logo2.png" alt="Logo de la marca" class="logo-marca-letras"></a>
+        </div>
+        <button class="abrir-menu" id="abrir"><i class="bi bi-list"></i></button>
+        <nav id="nav">
+            <button class="btn-cerrar" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-links">
+                <li><a href="#comida">Comida</a></li>
+                <li>
+                    <div class="opcion-bebida"><a href="#bebidas">Bebidas</a></div>
+                    <!-- <div class="opciones-bebidas">
+                        <ul>
+                            <li><a href="">Alcoholicas</a></li>
+                            <li><a href="">No Alcoholicas</a></li>
+                        </ul>
+                    </div> -->
+                </li>
+                <li><a href="#dulces">Dulces</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- <script src="js/nav.js"></script> -->
+    <div class="scrol">
+    </div>
+    <script type="text/javascript" src="js/nav.js"></script>
+    <aside>
+        <ul>
+            <li><a href="./index.html"><i class="fa-solid fa-house"></i></a><br>Inicio</li>
+            <li><a href="./galeria.html"><i class="fa-regular fa-images"></i></a><br>Galeria</li>
+            <li><a href="./eventos.html"><i class="fa-solid fa-calendar-check"></i></a><br>Eventos</li>
+            <li><a href="./info.html"><i class="fa-solid fa-circle-info"></i></a><br>+Info</li>
+            <li><a href="./foro.html"><i class="fa-solid fa-comment-dots"></i></a><br>Foro</li>
+        </ul>
+    </aside>
+    <main>
+        <section id="#comida">
+            <h2>Comida</h2>
+            <div class="container-elemento">
+                <div class="card" id="card1">
+                    <img src="./img/comida/alitasPollo.jpg" alt="Alitas de pollo">
+                    <h4>Alitas de pollo<br><span class="precio-elemento">$80.00</span></h4>
+                    <p>Alitas de pollo con BBQ habanero.
+                        Las alitas se preparan con: Salsa valentina, BBQ habanero, tajin, 
+                        salsa inglesa, salsa maggi y limón.
+                        Cada orden contiene 6 alitas.</p>
+                </div>
+                <div class="card" id="card2">
+                    <img src="./img/comida/hotdogs.jpg" alt="Hot Dogs">
+                    <h4>Hot dogs<br><span class="precio-elemento">$20.00</span></h4>
+                    <p>Los hot dogs llevan contienen:
+                        cebolla, catsup, chiles, tocino, mayonesa, mostaza y jitomate.</p>
+                    <p>    
+                        Orden de 3 Hot Dogs $50.
+                    </p>
+                </div>
+
+                <div class="card" id="card3">
+                    <img src="./img/comida/paketaxos.jpg" alt="Paketaxos">
+                    <h4>Paketaxos<br><span class="precio-elemento">$40.00</span></h4>
+                    <p> Contamos con los Paketaxos:
+                        Paketaxo mezcla,  quezo y bontanero.</p>
+                    <p> 3 Paketaxos $100</p>
+                </div>
+
+                <div class="card" id="card4">
+                    <img src="./img/comida/papasFritas.jpg" alt="Papas fritas">
+                    <h4>Papas fritas<br><span class="precio-elemento">$40.00</span></h4>
+                    <p>Puedes ponerle a tus papas: queso, salsa valentina, y catsup.</p>
+                    <p> 2 Papas fritas $75</p>
+                </div>
+
+                <div class="card" id="card5">
+                    <img src="./img/comida/salchipapas.jpg" alt="Salchipapas">
+                    <h4>Salchipapas<br><span class="precio-elemento">$25.00</span></h4>
+                    <p>Se preparan con queso, catsup y salsa valentina.</p>
+                </div>
+            </div>
+        </section>
+        <section id="bebidas" class="lista-bebidas-container">
+            <h2>Bebidas</h2>
+            <!-- <div class="lista-bebidas-container"> -->
+            <!-- <ul>
+                    <li><a href="#bebidas-alcoholicas" class="encabezado-bebida">Bebidas alcoholicas</a>
+                        <ul class="container-bebidas-alcoholicas">
+                            <li><a href="#cocteles">Cocteles</a></li>
+                            <li><a href="#mezcladas">Mezcladas</a></li>
+                            <li><a href="#cervezas">Cervezas</a></li>
+                            <li><a href="#vinos">Vinos</a></li>
+                            <li><a href="#shots">Shots</a></li>
+                            <li><a href="#espirituosas">Espirituosas</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#bebidas-no-alcoholicas" class="encabezado-bebida">Bebidas no alcoholicas</a>
+                        <ul class="container-bebidas-no-alcoholicas">
+                            <li><a href="#refrescos">Refrescos</a></li>
+                            <li><a href="#agua">Agua</a></li>
+                            <li><a href="#energeticas">Energéticas</a></li>
+                            <li><a href="#jugos">Jugos</a></li>
+                        </ul>
+                    </li>
+                </ul> -->
+            <!-- </div> -->
+            <article id="bebidas-alcoholicas">
+                <h3 class="title-bebidas" id="bebidas-alcoholicas">Alcoholicas</h3>
+                <article id="bebidas-alcoholicas-cocteles">
+                    <h4 class="title-tiposbebidas">Cocteles</h4>
+                    <div class="container-elemento">
+                        <div class="card" id="card1">
+                            <img src="./img/bebidas/bebidas-alcoholicas/cocteles/cocteles-caipirinha.jpg"
+                                alt="Caipirinha">
+                            <h4>Caipirinha<br><span class="precio-elemento">$105.00</span></h4>
+                            <p>Se prepara con una mezcla de limones, azúcar, hielo picado, y  cachaza brasileña.</p>
+                            <p> 2 Caipirinha $200</p>
+                        </div>
+
+                        <div class="card" id="card2">
+                            <img src="./img/bebidas/bebidas-alcoholicas/cocteles/cocteles-daiquiri.jpg" alt="Daiquiri">
+                            <h4>Daiquiri<br><span class="precio-elemento">$120.00</span></h4>
+                            <p>Contiene Ron blanco, jugo de limón, azúcar y hielo</p>
+                            <p> 2  Daiquiri $230</p>
+                        </div>
+
+                        <div class="card" id="card3">
+                            <img src="./img/bebidas/bebidas-alcoholicas/cocteles/cocteles-margarita.jpg"
+                                alt="Margarita">
+                            <h4>Margarita<br><span class="precio-elemento">$80.00</span></h4>
+                            <p>Se prepara con tequila, triple seco y jugo de limón.</p>
+                            <p> 3  Margaritas $225</p>
+                        </div>
+
+
+                        <div class="card" id="card4">
+                            <img src="./img/bebidas/bebidas-alcoholicas/cocteles/cocteles-martini.png" alt="Martini">
+                            <h4>Martini<br><span class="precio-elemento">$125.00</span></h4>
+                            <p>Contiene ginebra y vermut seco 
+                                servido extremadamente frío con una aceituna verde
+                                 o limón como decoración.</p>
+                          
+                            
+                        </div>
+
+
+                        <div class="card" id="card5">
+                            <img src="./img/bebidas/bebidas-alcoholicas/cocteles/cocteles-mojito.jpg" alt="Mojito">
+                            <h4>Mojito<br><span class="precio-elemento">$75.00</span></h4>
+                            <p>Se prepara con Ron, hierbabuena, lima fresca, azúcar, hielo y soda.</p>
+                            <p> 2  Mojitos $140</p>
+                        </div>
+
+
+                        <div class="card" id="card6">
+                            <img src="./img/bebidas/bebidas-alcoholicas/cocteles/cocteles-piniacolada.jpg"
+                                alt="Piña colada">
+                            <h4>Piña colada<br><span class="precio-elemento">$50.00</span></h4>
+                            <p>Contiene piña, crema de coco y ron.</p>
+                            <p> 3  Piñas coladas  $140</p>
+                        </div>
+                    </div>
+                    <h4 class="title-tiposbebidas">Mezcladas</h4>
+                    <div class="container-elemento">
+                        <div class="card" id="card1">
+                            <img src="./img/bebidas/bebidas-alcoholicas/mezcladas/mezcladas-whiskysoda.jpg"
+                                alt="Whisky con soda">
+                            <h4>Whisky con soda<br><span class="precio-elemento">$40.00</span></h4>
+                            <p>Soda y whisky de su preferencia.</p>
+                        </div>
+
+                        <div class="card" id="card2">
+                            <img src="./img/bebidas/bebidas-alcoholicas/mezcladas/mezcladas-cuba.jpg" alt="Cuba">
+                            <h4>Cuba<br><span class="precio-elemento">$55.00</span></h4>
+                            <p>Lo es una mezcla de ron blanco, limón, azúcar y hielo,
+                                 además suele adornarse con una rodaja de limón</p>
+                        </div>
+
+                        <div class="card" id="card3">
+                            <img src="./img/bebidas/bebidas-alcoholicas/mezcladas/mezcladas-azul.png"
+                                alt="Azulito">
+                            <h4>Azulito<br><span class="precio-elemento">$90.00</span></h4>
+                            <p>Contiene Vodka y una bebida energética azul.</p>
+                        </div>
+
+                        <div class="card" id="card4">
+                            <img src="./img/bebidas/bebidas-alcoholicas/mezcladas/mezcladas-rojito.png"
+                                alt="Rojito">
+                            <h4>Rojito<br><span class="precio-elemento">$85.00</span></h4>
+                            <p>Contiene vodka, bebida Granadina y hielo</p>
+                        </div>
+
+                        <div class="card" id="card6">
+                            <img src="./img/bebidas/bebidas-alcoholicas/mezcladas/mezcladas-rosa.png" alt="Rosita fresita">
+                            <h4>Rosita fresita<br><span class="precio-elemento">$45.00</span></h4>
+                            <p>Contiene Vodka, saborizante de blueberrys, escarchado y hielo.</p>
+                        </div>
+                    </div>
+                    <h4 class="title-tiposbebidas">Cervezas</h4>
+                    <div class="container-elemento">
+                        <div class="card" id="card1">
+                            <img src="./img/bebidas/bebidas-alcoholicas/cervezas/cervezas-lata.jpg"
+                                alt="Cervezas de lata">
+                            <h4>Cervezas de lata<br><span class="precio-elemento">$25.00</span></h4>
+                            <p>Tenemos de las marcas Michelobe Ultra, Carta blanca y barrilito .</p>
+                        </div>
+
+                        <div class="card" id="card2">
+                            <img src="./img/bebidas/bebidas-alcoholicas/cervezas/cervezas-355ml.jpg"
+                                alt="Cervezas de 355ml">
+                            <h4>Cervezas de 355ml<br><span class="precio-elemento">$35.00</span></h4>
+                            <p> Contamos con las marcas Corona y Victoria</p>
+                        </div>
+
+                        <div class="card" id="card3">
+                            <img src="./img/bebidas/bebidas-alcoholicas/cervezas/cervezas-caguama.jpg" alt="Caguamas">
+                            <h4>Caguamas<br><span class="precio-elemento">$65.00</span></h4>
+                            <p>Contamos con mas de 4 marcas.</p>
+                        </div>
+                    </div>
+                    <h4 class="title-tiposbebidas">Vinos</h4>
+                    <div class="container-elemento">
+                        <div class="card" id="card1">
+                            <img src="./img/bebidas/bebidas-alcoholicas/vinos/vinos-tinto.jpg" alt="Vino tinto">
+                            <h4>Vino tinto<br><span class="precio-elemento">$95.00</span></h4>
+                            <p>2 Vinos tinto $180 </p>
+                        </div>
+
+                        <div class="card" id="card2">
+                            <img src="./img/bebidas/bebidas-alcoholicas/vinos/vinos-blanco.jpg" alt="Vino blanco">
+                            <h4>Vino blanco<br><span class="precio-elemento">$85.50</span></h4>
+                            <p>2 Vinos tinto $170</p>
+                        </div>
+
+                        <div class="card" id="card3">
+                            <img src="./img/bebidas/bebidas-alcoholicas/vinos/vinos-champagne.jpg" alt="Champagne">
+                            <h4>Champagne<br><span class="precio-elemento">$205.50</span></h4>
+                            <p> 2 Champagne $500</p>
+                        </div>
+                    </div>
+                    <h4 class="title-tiposbebidas">Shots</h4>
+                    <div class="container-elemento">
+                        <div class="card" id="card1">
+                            <img src="./img/bebidas/bebidas-alcoholicas/shots/shots-tequila.jpg" alt="Tequila">
+                            <h4>Tequila<br><span class="precio-elemento">$75.00</span></h4>
+                            <p>Incluye limón y  sal.</p>
+                        </div>
+                        <div class="card" id="card2">
+                            <img src="./img/bebidas/bebidas-alcoholicas/shots/shots-jagermeister.jpg"
+                                alt="Jägermeister">
+                            <h4>Jägermeister<br><span class="precio-elemento">$145.00</span></h4>
+                            <p>>2 Jägermeister $380</p>
+                        </div>
+
+                        <div class="card" id="card3">
+                            <img src="./img/bebidas/bebidas-alcoholicas/shots/shots-sambuca.jpg" alt="Sambuca">
+                            <h4>Sambuca<br><span class="precio-elemento">$165.00</span></h4>
+                            <p> 3 Sambucas 490.</p>
+                        </div>
+
+                        <div class="card" id="card4">
+                            <img src="./img/bebidas/bebidas-alcoholicas/shots/shots-licorcafe.jpg" alt="Licor de café">
+                            <h4>Licor de café<br><span class="precio-elemento">$98.00</span></h4>
+                            <p> 2X1 los Lunes.</p>
+                        </div>
+                    </div>
+                    <h4 class="title-tiposbebidas">Espirituosas</h4>
+                    <div class="container-elemento">
+                        <div class="card" id="card1">
+                            <img src="./img/bebidas/bebidas-alcoholicas/espirituosas/espirituosas-brandy.jpg"
+                                alt="Brandy">
+                            <h4>Brandy<br><span class="precio-elemento">$78.00</span></h4>
+                            <p>Es un tipo de licor elaborado con jugo de frutas fermentadas,
+                                 siendo la uva la más comúnmente utilizada.</p>
+                        </div>
+
+                        <div class="card" id="card2">
+                            <img src="./img/bebidas/bebidas-alcoholicas/espirituosas/espirituosas-cognac.jpg"
+                                alt="Cognac">
+                            <h4>Cognac<br><span class="precio-elemento">$98.00</span></h4>
+                            <p> Es un tipo de brandy realizado a través de un proceso de doble destilación..</p>
+                        </div>
+
+                        <div class="card" id="card3">
+                            <img src="./img/bebidas/bebidas-alcoholicas/espirituosas/espirituosas-aguardiente.jpg"
+                                alt="Aguardiente">
+                            <h4>Aguardiente<br><span class="precio-elemento">$45.00</span></h4>
+                            <p>Es una bebida alcohólica destilada de un fermentado alcohólico</p>
+                        </div>
+
+                        <div class="card" id="card4">
+                            <img src="./img/bebidas/bebidas-alcoholicas/espirituosas/espirituosas-bluelabel.jpg"
+                                alt="Blue Label">
+                            <h4>Blue Label<br><span class="precio-elemento">$205.00</span></h4>
+                            <p>Es el whisky de lujo que introdujo el concepto de whisky de lujo. </p>
+                        </div>
+
+                        <div class="card" id="card5">
+                            <img src="./img/bebidas/bebidas-alcoholicas/espirituosas/espirituosas-tonayan.jpg"
+                                alt="Tonayán">
+                            <h4>Tonayán<br><span class="precio-elemento">$35.00</span></h4>
+                            <p>Es una bebida artesanal proveniente del destilado de cualquier planta de agave.</p>
+                        </div>
+
+                        <div class="card" id="card6">
+                            <img src="./img/bebidas/bebidas-alcoholicas/espirituosas/espirituosas-canitadeoro.jpg"
+                                alt="Cañita de oro">
+                            <h4>Cañita de oro<br><span class="precio-elemento">$20.00</span></h4>
+                            <p>Es el licor de caña de mayor venta en el pais por su calidad y precio.</p>
+                        </div>
+                    </div>
+                </article>
+            </article>
+            <article>
+                <h3 class="title-bebidas" id="bebidas-no-alcoholicas">No alcoholicas</h3>
+                <article id="bebidas-no-alcoholicas-refrescos">
+                    <h4 class="title-tiposbebidas">Refrescos</h4>
+                    <div class="container-elemento">
+                        <div class="card" id="card1">
+                            <img src="./img/bebidas/bebidas-no-alcoholicas/refrescos/refrescos-cocacola.jpg"
+                                alt="Coca Cola">
+                            <h4>Coca Cola<br><span class="precio-elemento">$25.00</span></h4>
+                            <p>2 Coca Cola $45</p>
+                        </div>
+
+                        <div class="card" id="card2">
+                            <img src="./img/bebidas/bebidas-no-alcoholicas/refrescos/refrescos-pepsi.jpg"
+                                alt="Pepsi">
+                            <h4>Pepsi<br><span class="precio-elemento">$25.00</span></h4>
+                            <p>3 Pepsis $70</p>
+                        </div>
+
+                        <div class="card" id="card3">
+                            <img src="./img/bebidas/bebidas-no-alcoholicas/refrescos/refrescos-sprite.jpg"
+                                alt="Sprite">
+                            <h4>Sprite<br><span class="precio-elemento">$25.00</span></h4>
+                            <p> 2x1 los Lunes</p>
+                        </div>
+                    </div>
+                    <h4 class="title-tiposbebidas">Agua</h4>
+                    <div class="container-elemento">
+                        <div class="card" id="card1">
+                            <img src="./img/bebidas/bebidas-no-alcoholicas/agua/agua-ciel.jpg" alt="Ciel">
+                            <h4>Ciel<br><span class="precio-elemento">$10.00</span></h4>
+                            <p>1 litro de Agua ciel</p>
+                        </div>
+
+                        <div class="card" id="card2">
+                            <img src="./img/bebidas/bebidas-no-alcoholicas/agua/agua-santaclara.jpg"
+                                alt="Santa Clara">
+                            <h4>Santa Clara<br><span class="precio-elemento">$25.00</span></h4>
+                            <p>Agua Santa Clara 1 litro.</p>
+                        </div>
+                    </div>
+                    <h4 class="title-tiposbebidas">Energéticas</h4>
+                    <div class="container-elemento">
+                        <div class="card" id="card1">
+                            <img src="./img/bebidas/bebidas-no-alcoholicas/energeticas/energeticas-redbull.jpg"
+                                alt="Red Bull">
+                            <h4>Red Bull<br><span class="precio-elemento">$45.00</span></h4>
+                            <p>Es una bebida funcional que te ayuda en esos momentos 
+                                en que necesitas un extra de energía.</p>
+                        </div>
+                    </div>
+                    <h4 class="title-tiposbebidas">Jugos</h4>
+                    <div class="container-elemento">
+                        <div class="card" id="card1">
+                            <img src="./img/bebidas/bebidas-no-alcoholicas/jugos/jugos-naranja.jpg" alt="Naranja">
+                            <h4>Naranja<br><span class="precio-elemento">$25.00</span></h4>
+                            <p> 1 Litro</p>
+                            <p> 2 litros por $ 40</p>
+                        </div>
+
+                        <div class="card" id="card2">
+                            <img src="./img/bebidas/bebidas-no-alcoholicas/jugos/jugos-toronja.jpg" alt="Toronja">
+                            <h4>Toronja<br><span class="precio-elemento">$25.00</span></h4>
+                            <p> 1 Litro </p>
+                            <p> 3 litros $70.</p>
+                        </div>
+                    </div>
+            </article>
+        </section>
+        <section id="dulces" class="lista-dulces-container">
+            <h2>Dulces</h2>
+            <div class="container-elemento">
+                <div class="card" id="card1">
+                    <img src="./img/dulces/dulces-chocolates.jpg" alt="Chocolates">
+                    <h4>Chocolates<br><span class="precio-elemento">$25.00</span></h4>
+                    <p>Contamos con chocolates: Milky Way, Scnickers y nos vamos a pasear </p>
+                </div>
+
+                <div class="card" id="card2">
+                    <img src="./img/dulces/dulces-gomitas.jpg" alt="Gomitas">
+                    <h4>Gomitas<br><span class="precio-elemento">$25.00</span></h4>
+                    <p>Tenemos gomitas de: manguito, viborita, frutas, panditas y donitas.</p>
+                </div>
+
+                <div class="card" id="card3">
+                    <img src="./img/dulces/dulces-palomitas.jpg" alt="Palomitas">
+                    <h4>Palomitas<br><span class="precio-elemento">$25.00</span></h4>
+                    <p> 2X1 los Viernes.</p>
+                </div>
+
+                <div class="card" id="card4">
+                    <img src="./img/dulces/dulces-papas.jpg" alt="Papas">
+                    <h4>Papas<br><span class="precio-elemento">$25.00</span></h4>
+                    <p>Ofrecemols papas Barcel, Sabritas y Cheetos</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="https://account.snatchbot.me/script.js"></script><script>window.sntchChat.Init(374398)</script>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="img/logos/new/logo1_sin_fondo.png" alt="Logo del antro">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE EL ANTRO</h2>
+                <p>No se permiten personas menores de edad.</p>
+                <a href="./mapasitio.html" class="link-mapasitio">Mapa del sitio</a>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="https://www.instagram.com/spaceclub04?igshid=YTQwZjQ0NmI0OA==" class="fa fa-instagram" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>Space</b> - Todos los derechos reservados.</small>
+        </div>
+    </footer>
+</body>
+
+</html>

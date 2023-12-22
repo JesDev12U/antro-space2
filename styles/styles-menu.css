@@ -1,0 +1,310 @@
+main {
+    grid-row: 1;
+    margin-top: 70px;
+    margin-left: 20px;
+}
+
+@media screen and (max-width:800px) {
+    main {
+        margin-top: -60px;
+    }
+}
+
+html {
+    zoom: 100%;
+    /* Para navegadores que no sean IE */
+    zoom: 1;
+    /* Para IE 6-11 */
+    -ms-zoom: 1;
+}
+
+
+.title-tiposbebidas {
+    text-shadow: 0 0 5px #FA00FF, 0 0 15px #FA00FF;
+    font-size: 40px;
+    font-family: Space, 'Caveat', cursive;
+}
+
+.title-bebidas {
+    text-shadow: 0 0 5px blue, 0 0 15px blue, 0 0 30px blue;
+    font-family: 'Caveat', cursive;
+    font-size: 50px;
+
+}
+
+.container-elemento {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+
+}
+
+.container-elemento .card {
+    width: 330px;
+    height: 600px;
+    border-radius: 8px;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(20, 20, 20);
+}
+
+.container-elemento .card:hover {
+    transform: translateY(-15px);
+}
+
+.container-elemento .card img {
+    width: 330px;
+    height: 220px;
+}
+
+.container-elemento .card h4 {
+    font-weight: 600;
+}
+
+.container-elemento .card .precio-elemento {
+    color: rgb(1, 181, 1);
+}
+
+.container-elemento .card p {
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container-elemento .card #card1 {
+    grid-column: 1;
+}
+
+.container-elemento .card #card2 {
+    grid-column: 2;
+}
+
+.container-elemento .card #card3 {
+    grid-column: 3;
+}
+
+.container-elemento .card #card4 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.container-elemento .card #card5 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.container-elemento .card #card6 {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+
+
+@media screen and (max-width:1250px) {
+    .container-elemento {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .container-elemento .card #card1 {
+        grid-column: 1;
+    }
+
+    .container-elemento .card #card2 {
+        grid-column: 2;
+    }
+
+    .container-elemento .card #card3 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .container-elemento .card #card4 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .container-elemento .card #card5 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .container-elemento .card #card6 {
+        grid-column: 2;
+        grid-row: 3;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .container-elemento {
+        width: 80%;
+    }
+
+    .container-elemento .card img {
+        width: 100%;
+    }
+
+    .container-elemento .card {
+        width: 300px;
+    }
+
+    .container-elemento .card p {
+        font-size: 0.4rem;
+    }
+}
+
+@media screen and (max-width:770px) {
+    .container-elemento {
+        width: 80%;
+    }
+
+    .container-elemento .card img {
+        width: 100%;
+    }
+
+    .container-elemento .card {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .container-elemento {
+        width: 80%;
+    }
+
+    .container-elemento .card img {
+        width: 100%;
+    }
+
+    .container-elemento .card {
+        width: 170px;
+    }
+
+    .container-elemento .card p {
+        font-size: 0.35rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .container-elemento {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .container-elemento .card img {
+        width: 280px;
+        height: 230px;
+    }
+
+    .container-elemento .card {
+        width: 280px;
+        height: 530;
+    }
+
+    .container-elemento .card p {
+        font-size: 16px;
+    }
+
+    .container-elemento .card #card1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .container-elemento .card #card2 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .container-elemento .card #card3 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .container-elemento .card #card4 {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .container-elemento .card #card5 {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    .container-elemento .card #card6 {
+        grid-column: 1;
+        grid-row: 6;
+    }
+}
+
+.lista-bebidas-container ul {
+    /* padding:0;
+    margin:0; */
+
+    display: grid;
+    grid-template-columns: 40% 50%;
+}
+
+
+.lista-bebidas-container ul li {
+    list-style-type: none;
+
+
+}
+
+.lista-bebidas-container ul li a {
+    text-decoration: none;
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+.container-bebidas-alcoholicas li a,
+.container-bebidas-no-alcoholicas li a {
+    text-shadow: 0 0 5px red, 0 0 15px red;
+    font-size: 0.7em;
+}
+
+.container-bebidas-alcoholicas li a:hover,
+.container-bebidas-no-alcoholicas li a:hover {
+    color: red;
+}
+
+.encabezado-bebida {
+    font-size: 1em;
+    text-shadow: 0 0 5px rgb(0, 193, 193), 0 0 15px rgb(0, 193, 193);
+}
+
+.encabezado-bebida:hover {
+    color: rgb(0, 193, 193);
+}
+
+@media screen and (max-width:900px) {
+
+    .container-bebidas-alcoholicas li a,
+    .container-bebidas-no-alcoholicas li a {
+        font-size: 0.5em;
+    }
+
+    .encabezado-bebida {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .lista-bebidas-container ul {
+        grid-template-columns: 1fr;
+    }
+
+    .container-bebidas-alcoholicas li a,
+    .container-bebidas-no-alcoholicas li a {
+        font-size: 0.7em;
+    }
+
+    .encabezado-bebida {
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,28 @@
+.mapa-del-sitio{
+    margin-top: 100px;
+}
+
+.mapa-del-sitio ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 100px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top:100px;
+    margin-bottom:60px;
+}
+
+.mapa-del-sitio ul li a i:hover{
+    color: #FA00FF;
+}
+
+.mapa-del-sitio h1{
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(255, 137, 255);
+}
